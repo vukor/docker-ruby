@@ -1,7 +1,7 @@
 docker-ruby
 ===========
 
-This is docker project for generate static content in octopress. I build ruby 1.9.3 + Gems.
+This is docker project for generate static content in octopress. In image you wil find ruby 1.9.3 + Gems.
 
 
 How it's work
