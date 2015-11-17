@@ -1,10 +1,10 @@
-## Version: 0.1
+## Version: 0.2
 FROM centos:centos6
 MAINTAINER Anton Bugreev <anton@bugreev.ru>
 
 ## install dependencies
 RUN curl --silent --location https://rpm.nodesource.com/setup | bash - && \
-    yum install curl which tar patch libyaml-devel glibc-headers autoconf gcc-c++ glibc-devel patch readline-devel zlib-devel libffi-devel openssl-devel bzip2 automake libtool bison sqlite-devel nodejs -y
+    yum install git curl which tar patch libyaml-devel glibc-headers autoconf gcc-c++ glibc-devel patch readline-devel zlib-devel libffi-devel openssl-devel bzip2 automake libtool bison sqlite-devel nodejs -y
 
 ## add user
 RUN useradd vukor -u 1000 -g 50
