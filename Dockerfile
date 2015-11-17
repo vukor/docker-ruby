@@ -12,7 +12,7 @@ USER vukor
 WORKDIR /home/vukor
 
 ## install rvm
-RUN gpg2 --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 && \
+RUN curl -sSL https://rvm.io/mpapis.asc | gpg2 --import - && \
     curl -L https://get.rvm.io | bash -s stable --ruby=1.9.3
 
 ## install ruby
