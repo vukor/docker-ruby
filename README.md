@@ -9,17 +9,17 @@ How it's work
 
 1. Pull image:
 
-    `` docker pull vukor/docker-ruby ``
+    `` docker pull vukor/docker-ruby:1.9 ``
 
 2. Go to directory with your octopress project
 
 3. Generate static content:
 
-    `` docker run -v `pwd`:/blog -ti --rm vukor/docker-ruby rake generate ``
+    `` docker run -v `pwd`:/blog -ti --rm vukor/docker-ruby:1.9 rake generate ``
 
 4. Generate and preview static content:
 
-    `` docker run -p 80:4000 -v `pwd`:/blog -ti --rm vukor/docker-ruby rake preview ``
+    `` docker run -p 80:4000 -v `pwd`:/blog -ti --rm vukor/docker-ruby:1.9 rake preview ``
 
     Now see http://ip-address-where-run-docker/
 
