@@ -32,7 +32,7 @@ RUN /bin/bash -c "source $HOME/.rvm/scripts/rvm && \
 VOLUME ["/home/vukor/blog/"]
 
 ## Test image
-COPY ./test.sh /home/vukor/test.sh
+COPY ./test.sh /test.sh
 
 ### main
 COPY docker-entrypoint.sh /entrypoint.sh

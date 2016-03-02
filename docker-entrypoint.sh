@@ -1,7 +1,7 @@
 #!/bin/bash
 
 source ~/.bash_profile
-cd /blog
+test -d /blog && cd /blog
 
 exec "$@"
 
