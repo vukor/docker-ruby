@@ -1,6 +1,6 @@
 #!/bin/sh
 
-RUBY_VERSION="1.8"
+RUBY_VERSION="1.9"
 
 if ruby --version | grep ${RUBY_VERSION}
 then
