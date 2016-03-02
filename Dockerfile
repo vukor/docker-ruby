@@ -33,7 +33,6 @@ VOLUME ["/home/vukor/blog/"]
 
 ## Test image
 COPY ./test.sh /home/vukor/test.sh
-RUN chmod 700 /home/vukor/test.sh
 
 ### main
 COPY docker-entrypoint.sh /entrypoint.sh
