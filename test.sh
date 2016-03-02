@@ -1,7 +1,9 @@
 #!/bin/sh
 
-ruby --version | grep -v '1.9' && exit 1
+RUBY_VERSION="1.8"
 
-echo "Pass"
+ruby --version | grep -v ${RUBY_VERSION} && (echo "test ops not pass" && exit 1)
+
+echo "test ops pass"
 exit 0
 
