@@ -38,4 +38,3 @@ CMD ["ruby"]
 
 ### allow ports
 EXPOSE 4000
-
