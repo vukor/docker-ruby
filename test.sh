@@ -2,8 +2,14 @@
 
 RUBY_VERSION="1.8"
 
-ruby --version | grep -v ${RUBY_VERSION} && (echo "test ops not pass" && exit 1)
+if ruby --version | grep ${RUBY_VERSION}
+then
+  echo "test passed"
+  exit 0
+else
+  echo "test failed"
+  exit 1
+fi
 
-echo "test ops pass"
-exit 0
+exit 1
 
