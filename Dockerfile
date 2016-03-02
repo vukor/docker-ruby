@@ -1,4 +1,4 @@
-## Version: 0.2
+## Version: 0.3
 FROM centos:centos6
 MAINTAINER Anton Bugreev <anton@bugreev.ru>
 
@@ -30,6 +30,10 @@ RUN /bin/bash -c "source $HOME/.rvm/scripts/rvm && \
 
 ### volumes
 VOLUME ["/home/vukor/blog/"]
+
+## Test image
+COPY ./test.sh /home/vukor/test.sh
+RUN chmod 700 /home/vukor/test.sh
 
 ### main
 COPY docker-entrypoint.sh /entrypoint.sh
